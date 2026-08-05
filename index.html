@@ -3,158 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>株式会社マテリエ</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-    color: #222;
-    background: #fff;
-    line-height: 1.7;
-  }
-  header {
-    background: #1a2b4c;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  header h1 {
-    font-size: 1.8rem;
-    letter-spacing: 0.05em;
-  }
-  header p {
-    margin-top: 8px;
-    color: #cfd8e3;
-    font-size: 0.95rem;
-  }
-  nav {
-    background: #f4f6f9;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    padding: 14px;
-    flex-wrap: wrap;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  nav a {
-    color: #1a2b4c;
-    text-decoration: none;
-    font-size: 0.95rem;
-  }
-  nav a:hover { text-decoration: underline; }
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
-  section {
-    margin-bottom: 48px;
-  }
-  section h2 {
-    font-size: 1.3rem;
-    border-left: 4px solid #1a2b4c;
-    padding-left: 12px;
-    margin-bottom: 16px;
-    color: #1a2b4c;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  table th, table td {
-    text-align: left;
-    padding: 12px;
-    border-bottom: 1px solid #e0e0e0;
-    vertical-align: top;
-  }
-  table th {
-    width: 30%;
-    color: #555;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-  ul.business-list {
-    list-style: disc;
-    padding-left: 20px;
-  }
-  ul.business-list li { margin-bottom: 6px; }
-  footer {
-    background: #1a2b4c;
-    color: #cfd8e3;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.85rem;
-  }
-</style>
+<title>株式会社マテリエ | MATERIE Co., Ltd.</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>株式会社マテリエ</h1>
-  <p>MATERIE Co., Ltd.</p>
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="6" fill="#14213D"/>
+        <path d="M8 22V10L16 16L24 10V22" stroke="#C9A15A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      株式会社マテリエ
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+    <nav class="nav">
+      <a href="index.html" class="active">ホーム</a>
+      <a href="about.html">会社概要</a>
+      <a href="business.html">事業内容</a>
+      <a href="tokushoho.html">特定商取引法に基づく表記</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+  </div>
 </header>
 
-<nav>
-  <a href="#about">会社概要</a>
-  <a href="#business">事業内容</a>
-  <a href="#tokushoho">特定商取引法に基づく表記</a>
-  <a href="#contact">お問い合わせ</a>
-</nav>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">MATERIE Co., Ltd.</div>
+    <h1>お客様の暮らしに、<br>確かな商品をお届けする。</h1>
+    <p>株式会社マテリエは、インターネット通信販売を中心に、<br>各種物品の販売・輸出入事業を展開しています。</p>
+  </div>
+</section>
 
 <main>
+  <div class="section-title">私たちについて</div>
+  <div class="grid-3">
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="8" y="14" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+        <path d="M8 20H40" stroke="currentColor" stroke-width="2"/>
+        <path d="M17 14V10C17 8.34315 18.3431 7 20 7H28C29.6569 7 31 8.34315 31 10V14" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <h3>通信販売事業</h3>
+      <p>インターネットを通じて、暮らしを豊かにする各種物品をお届けしています。</p>
+    </div>
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="2"/>
+        <path d="M24 7C24 7 30 14 30 24C30 34 24 41 24 41" stroke="currentColor" stroke-width="2"/>
+        <path d="M24 7C24 7 18 14 18 24C18 34 24 41 24 41" stroke="currentColor" stroke-width="2"/>
+        <path d="M7 24H41" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <h3>輸出入事業</h3>
+      <p>国内外のパートナーと連携し、幅広い商品の輸出入を手がけています。</p>
+    </div>
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 6L40 14V24C40 32.8366 32.8366 40 24 42C15.1634 40 8 32.8366 8 24V14L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M17 24L22 29L31 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3>安心のサポート体制</h3>
+      <p>お客様に安心してご利用いただけるよう、丁寧な対応を心がけています。</p>
+    </div>
+  </div>
 
-  <section id="about">
-    <h2>会社概要</h2>
-    <table>
-      <tr><th>商号</th><td>株式会社マテリエ</td></tr>
-      <tr><th>代表者</th><td>代表取締役　横川 稔</td></tr>
-      <tr><th>所在地</th><td>〒343-0000　埼玉県越谷市大字向畑760番地2</td></tr>
-      <tr><th>本店（登記上）</th><td>東京都千代田区飯田橋四丁目10番1-304号</td></tr>
-      <tr><th>会社法人等番号</th><td>0100-01-168347</td></tr>
-      <tr><th>設立</th><td>平成27年6月2日</td></tr>
-      <tr><th>事業内容</th><td>インターネット通信販売事業　他</td></tr>
-    </table>
-  </section>
-
-  <section id="business">
-    <h2>事業内容</h2>
-    <ul class="business-list">
-      <li>インターネットを通じた各種物品の通信販売事業</li>
-      <li>各種物品販売・輸出入全般、商業</li>
-      <li>経営戦略、人事コンサルティング事業</li>
-      <li>その他適法な一切の事業</li>
-    </ul>
-  </section>
-
-  <section id="tokushoho">
-    <h2>特定商取引法に基づく表記</h2>
-    <table>
-      <tr><th>販売事業者名</th><td>株式会社マテリエ</td></tr>
-      <tr><th>運営責任者</th><td>横川 稔</td></tr>
-      <tr><th>所在地</th><td>〒343-0000　埼玉県越谷市大字向畑760番地2</td></tr>
-      <tr><th>電話番号</th><td>048-000-0000（お問い合わせはメールにて承ります）</td></tr>
-      <tr><th>メールアドレス</th><td>info@materie-example.jp</td></tr>
-      <tr><th>販売価格</th><td>各商品ページに記載</td></tr>
-      <tr><th>商品代金以外の必要料金</th><td>消費税、配送料（各商品ページに記載）</td></tr>
-      <tr><th>お支払い方法</th><td>クレジットカード決済　他、各モールが定める決済方法</td></tr>
-      <tr><th>お支払い時期</th><td>ご注文確定時</td></tr>
-      <tr><th>商品の引渡し時期</th><td>ご注文確定後、各商品ページに記載の納期に基づき発送</td></tr>
-      <tr><th>返品・交換について</th><td>商品到着後7日以内に限り、未使用品に限り対応いたします。詳細は各商品ページの記載に準じます。</td></tr>
-    </table>
-  </section>
-
-  <section id="contact">
-    <h2>お問い合わせ</h2>
-    <table>
-      <tr><th>メールアドレス</th><td>info@materie-example.jp</td></tr>
-      <tr><th>電話番号</th><td>048-000-0000</td></tr>
-      <tr><th>受付時間</th><td>平日 10:00〜17:00（土日祝を除く）</td></tr>
-    </table>
-  </section>
-
+  <div class="cta-row">
+    <a href="business.html" class="btn">事業内容を見る</a>
+  </div>
 </main>
 
 <footer>
+  <div class="footer-nav">
+    <a href="index.html">ホーム</a>
+    <a href="about.html">会社概要</a>
+    <a href="business.html">事業内容</a>
+    <a href="tokushoho.html">特定商取引法に基づく表記</a>
+    <a href="contact.html">お問い合わせ</a>
+  </div>
   &copy; 2026 MATERIE Co., Ltd.
 </footer>
 
